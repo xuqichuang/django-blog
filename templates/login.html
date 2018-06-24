@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    欢迎来到登录界面
+  </title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <style>
+    .container{
+      width: 400px;
+      height: auto;
+      margin: 50px auto;
+    }
+    .form-group{
+      width: 400px;
+      height:40px;
+      vertical-align: middle;
+      margin-top: 30px;
+    }
+    .space{
+      margin-left: 70px;
+    }
+    .form-control{
+      border-radius: 5px;
+      width: 300px;
+      height: 40px;
+      outline: none;
+      padding:0 10px;
+      border:1px solid rgb(192, 189, 189);
+    }
+    .form-control:focus{
+      border:1px solid rgb(70, 214, 195);
+    }
+    .btn{
+      width: 100px;
+      height: 40px;
+      outline: none;
+      padding:0 10px;
+      background: rgb(80, 177, 180);
+      color: aliceblue;
+      border:none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all .3s ease;
+    }
+    .btn:active{
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="/" id="login_form" method="post">
+      <div class="form-group">
+        <label for="j_username" class="t">用户名：</label>
+        <input id="username" value="" name="username" type="text" class="form-control" >
+      </div>
+      <div class="form-group">
+        <label for="j_password" class="t">密　码：</label>
+        <input id="password" value="" name="password" type="password" class="form-control">
+      </div>
+      <div class="form-group space">
+        <label class="t"></label>
+        <button type="submit" id="submit_btn" class="btn">&nbsp;登&nbsp;录&nbsp </button>
+        <input type="reset" value="&nbsp;&nbsp;重&nbsp;置&nbsp;" class="btn">
+      </div>
+        {% csrf_token %}
+    </form>
+  </div>
+</body>
+
+</html>

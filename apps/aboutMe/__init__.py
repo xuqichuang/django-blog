@@ -1,0 +1,1 @@
+default_app_config = 'aboutMe.apps.AboutMeConfig'

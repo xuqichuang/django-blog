@@ -36,11 +36,7 @@ SECRET_KEY = 'xbc7n3vj88@5lpe+1r*oro9#23(62&6-2w%i=7%th!d6^g-k*-'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    u'172.20.10.5',
-    u'127.0.0.1',
-    u'47.54.235.26',
-    u'47.106.142.140',
-    u'xuqichuang.com'
+    '*'
 ]
 
 
@@ -72,11 +68,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
-    'backend',
     'users',
-    'courses',
-    'origanization',
-    'operation',
     'aboutMe',
     'blog',
     'xadmin',
